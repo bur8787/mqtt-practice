@@ -8,6 +8,8 @@ The server runs on rabbitmq and use rabbitmq-mqtt plugin.
 
 ## Getting Started
 
+![video](https://github.com/bur8787/mqtt-practice/raw/master/static/1-getting-started.gif)
+
 ### Run server
 
 ```
@@ -24,3 +26,7 @@ http://workswithweb.com/html/mqttbox/installing_apps.html#install_on_mac
 #### Test Connection
 
 mqtt/tcp, http://localhost:1883  
+
+##### MQTTBox setting
+
+<img src="https://github.com/bur8787/mqtt-practice/raw/master/static/2-mqttbox-setting.png"/>

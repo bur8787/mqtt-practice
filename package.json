@@ -1,0 +1,24 @@
+{
+  "name": "mqtt-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bur8787/mqtt-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bur8787/mqtt-practice/issues"
+  },
+  "homepage": "https://github.com/bur8787/mqtt-practice#readme",
+  "dependencies": {
+    "mqtt": "^4.2.6"
+  }
+}
