@@ -12,6 +12,12 @@ The server runs on rabbitmq and use rabbitmq-mqtt plugin.
 
 ### Run server
 
+#### Install MQTT BOX
+
+http://workswithweb.com/html/mqttbox/installing_apps.html#install_on_mac
+
+#### Run MQTT broker
+
 ```
 $ cd docker-compose 
 $ docker-compose up -d
@@ -19,9 +25,11 @@ $ docker-compose up -d
 
 if it runs, you can access to http://localhost:15672
 
-#### Install MQTT BOX
+#### Run MQTT subscriber
 
-http://workswithweb.com/html/mqttbox/installing_apps.html#install_on_mac
+```
+$ npm start
+```
 
 #### Test Connection
 
