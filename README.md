@@ -2,13 +2,16 @@
 
 ## Overview
 
-This repository stores things I've tried to catch up on MQTT.
+This repository includes my catch-up on MQTT.
 
-The server runs on rabbitmq and use rabbitmq-mqtt plugin.
-
-## Getting Started
+The system architecture is as follows.
+- RabbitMQ and rabbitmq-mqtt plugin are used for MQTT broker.
+- NodeJS is used for a subscriber.
+- MQTTBox is used for a publisher.
 
 <img src="https://github.com/bur8787/mqtt-practice/raw/master/static/3-flow.png"/>
+
+## Getting Started
 
 ![video](https://github.com/bur8787/mqtt-practice/raw/master/static/1-getting-started.gif)
 
