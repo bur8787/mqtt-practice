@@ -8,6 +8,8 @@ The server runs on rabbitmq and use rabbitmq-mqtt plugin.
 
 ## Getting Started
 
+<img src="https://github.com/bur8787/mqtt-practice/raw/master/static/3-flow.png"/>
+
 ![video](https://github.com/bur8787/mqtt-practice/raw/master/static/1-getting-started.gif)
 
 ### Run server
