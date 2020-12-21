@@ -30,6 +30,11 @@ $ docker-compose up -d
 
 if it runs, you can access to http://localhost:15672
 
+##### rabbitmq-mqtt
+- RabbitMQ supports MQTT 3.1.1 
+
+https://www.rabbitmq.com/mqtt.html
+
 #### Run MQTT subscriber
 
 ```
@@ -43,3 +48,23 @@ mqtt/tcp, http://localhost:1883
 ##### MQTTBox setting
 
 <img src="https://github.com/bur8787/mqtt-practice/raw/master/static/2-mqttbox-setting.png"/>
+
+#### Appendix
+
+As described in the following link, there are 3 Quality of Service levels.
+https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels/
+
+- At most once (QoS0)
+- At least once (QoS1)
+- Exactly once (QoS2)
+
+RabbitMQ does not support QoS2 subscriptions.
+Therefore, it behaves as follows.
+
+| Publisher\Subscriber | QoS0 | QoS1 | QoS2 |
+|----------------------|------|------|------|
+| QoS0                 | QoS0 | QoS0 | QoS0 |
+| QoS1                 | QoS0 | QoS1 | QoS1 |
+| QoS2                 | QoS0 | QoS1 | QoS1 |
+
+

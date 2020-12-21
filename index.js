@@ -1,5 +1,9 @@
-var mqtt = require('mqtt')
-var client = mqtt.connect('mqtt://localhost:1883')
+const username = "mqttuser"
+const password = "password"
+const mqtt = require('mqtt')
+const client = mqtt.connect('mqtt://localhost:1883', {
+    username, password
+})
 
 client.on('error',
     function (err) {
@@ -8,9 +12,8 @@ client.on('error',
     }
 )
 
-client.on('connect',
-    function () {
-        client.subscribe('test', function (err) {
+client.on('connect', function () {
+        client.subscribe('test', {qos: 1}, function (err) {
             if (err) {
                 console.log("error: ", err)
             }
@@ -19,6 +22,9 @@ client.on('connect',
     }
 )
 
-client.on('message', function (topic, message) {
-    console.log(message.toString())
+client.on('message', function (topic, message, packet) {
+    console.log("====================================================")
+    console.log({topic})
+    console.log({message: message.toString()})
+    console.log({packet})
 })
